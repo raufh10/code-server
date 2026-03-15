@@ -11,12 +11,6 @@ ENV SHELL=/bin/bash
 # Fix permissions for code-server
 RUN sudo chown -R coder:coder /home/coder/.local
 
-# Install VS Code Extensions
-RUN code-server --install-extension ms-python.python \
-  && code-server --install-extension rust-lang.rust-analyzer
-
-# -----------
-
 # Port
 ENV PORT=8080
 
