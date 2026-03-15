@@ -17,18 +17,18 @@ RUN sudo chown -R coder:coder /home/coder/.local
 # -----------
 
 # 1. Install System Dependencies (Python3, pip, and Rust build tools)
-RUN sudo apt-get update && sudo apt-get install -y \
-  python3 \
-  python3-pip \
-  build-essential \
-  curl \
-  gcc \
-  make \
-  && sudo rm -rf /var/lib/apt/lists/*
+#RUN sudo apt-get update && sudo apt-get install -y \
+#  python3 \
+#  python3-pip \
+#  build-essential \
+#  curl \
+#  gcc \
+#  make \
+#  && sudo rm -rf /var/lib/apt/lists/*
 
 # 2. Install Rust (using rustup)
-RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
-ENV PATH="/home/coder/.cargo/bin:${PATH}"
+#RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+#ENV PATH="/home/coder/.cargo/bin:${PATH}"
 
 # 3. Install VS Code Extensions
 RUN code-server --install-extension ms-python.python \
