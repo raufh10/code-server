@@ -1,4 +1,4 @@
-This repository contains a streamlined, persistent VS Code environment designed to run on [Railway](https://railway.com/). It features automatic volume permission handling, a 15-minute idle timeout, and telemetry disabled for privacy.
+This repository contains a streamlined, persistent VS Code environment designed to run on [Railway](https://railway.com/). It features automatic volume permission handling, a 15-minute idle timeout, and telemetry disabled for privacy based on [coder's Github repo](https://github.com/coder/deploy-code-server).
 
 ## 🚀 Features
 
