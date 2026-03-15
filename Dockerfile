@@ -1,4 +1,3 @@
-# Start from the code-server Debian base image
 FROM codercom/code-server:4.111.0-39
 
 USER coder
